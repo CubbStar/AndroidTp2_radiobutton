@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <RadioGroup
+            android:id="@+id/GroupeR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dbeceb"
+            android:padding="15dp">
+                <TextView
+                    android:id="@+id/titre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quel est votre couleur favorite ?"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <RadioButton
+                    android:id="@+id/rouge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rouge"/>
+
+                <RadioButton
+                    android:id="@+id/vert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vert"/>
+
+                <RadioButton
+                    android:id="@+id/jaune"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jaune"/>
+
+                <RadioButton
+                    android:id="@+id/bleu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bleu"/>
+            </RadioGroup>
+
+        <Button
+            android:id="@+id/boutonCouleur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voir la couleur séléctionnée"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
